@@ -1,116 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>CircuitBots</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>
+     CircuitBots
+    </title>
+
+    <!-- ==== STYLE.CSS ==== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ====  REMIXICON CDN ==== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="pngegg (17).png" class="img-responsive2" alt="Arduino Logo">CircuitBots</a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="kit.html">ArduinoKit</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Lessons
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="lesson1.html">Lesson1</a></li>
-                  <li><a class="dropdown-item" href="lesson2.html">Lesson2</a></li>
-                  <li><a class="dropdown-item" href="lesson3.html">Lesson3</a></li>
-                  <li><a class="dropdown-item" href="lesson4.html">Lesson4</a></li>
-                  <li><a class="dropdown-item" href="lesson5.html">Lesson5</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">YourRobot</a>
-              </li>
-            </ul>
-          </div>
+    <!-- ======
+      HEADER
+      ====== -->
+    <header class="container header">
+      <!-- ======  NAVBAR  ====== -->
+      <nav class="navbar">
+        <!-- ==== LOGO  ==== -->
+        <div class="logo">
+          <a href="#">Circuit<span>Bots</span></a>
         </div>
-      </nav>
+        <!-- ==== NAV-MENU ==== -->
+        <div class="nav__menu">
+          <ul class="nav__menu_list">
+            <li class="nav_menu_list_item">
+              <a href="index.html" class="nav__link active">home</a>
+            </li>
 
-       <!-- Motivational Quote -->
-  <div class="container mt-4 text-center">
-    <h2>CircuitBots</h2>
-    <p>Empowering your journey of learning and coding with Arduino</p>
-  </div>
-
- 
-  <img id='rbt-img' src="https://th.bing.com/th/id/R.ad33db36a6b20eaf56cf6cce5b367f61?rik=fb5ZzhCA05yfWw&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f1009646_robot-vector-png.jpg&ehk=STdVX3y5npDgTxLUfig4BR7Bijk1vA42ekDt7Jbyem0%3d&risl=&pid=ImgRaw&r=0" alt="img1">
-<p id="greeting"> "🤖 Hello there, future roboticist sand young explorers! Welcome to our world of robotics and coding fun. Let's spark your imagination and bring robots to life together! 🚀🌟"</p>
-
-
-
-      <!-- carroussel -->
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img  height="600" src="https://static.vecteezy.com/system/resources/previews/002/560/699/large_2x/little-children-studying-in-classroom-vector.jpg
-            " class="d-block w-100" alt="pic1">
-          </div>
-          <div class="carousel-item">
-            <img height="600" src="https://www.copyright.com/wp-content/uploads/2023/05/chatgpt-chegg-768x408.jpg" alt="...">
         
-        </div>
-          <div class="carousel-item">
-            <img height="600" src="https://www.subr.edu/assets/subr/ComputerScience/Pics/cover.png" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+            <li class="nav_menu_list_item">
+              <a href="about.html" class="nav__link">about</a>
+            </li>
+
+           
+            <li class="nav_menu_list_item">
+              <a href="kit.html" class="nav__link">arduinokit</a>
+            </li>
+
+            <li class="nav_menu_list_item">
+              <a href="lessons.html" class="nav__link">lessons</a>
+               
+              </a>
+            </li>
+        <!-- ==== NAV-TOGGLE-BUTTON ==== -->
+        <button class="nav_toggle_btn">
+          <i class="ri-menu-fill ri-xl"></i>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      </nav>
+    </header>
 
-
-      <!-- boxes -->
-     <div class="box1">
-         <h3>Robotics</h3>
-         <br>
-          <p>Welcome to CircuitBots, your gateway to the captivating world of robotics. Get ready to embark on a journey that spans the realms of science, technology, and creativity. Whether you're a curious beginner or a seasoned enthusiast, the realm of robotics offers endless opportunities for innovation and discovery. </p>
-      </div>
-    
-      <div class="video-container">
-      <iframe id="yt-video"  src="https://www.youtube.com/embed/htjRUL3neMg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-    </div>
-    
-    
-        <div class="box2">
-          <h2>Why CircuitBots?</h2>
-          <p>At CircuitBots, we believe that learning should be an exciting journey, and that's why we've crafted a platform that combines the power of educational resources, hands-on projects, and community engagement. Our goal is to provide you with a seamless learning experience that sparks your curiosity, nurtures your skills, and helps you excel in the world of coding and electronics.</p>
+    <!-- HERO-->
+    <main class="hero container">
+      <!-- ==== HERO-INFO-WRAPPER ==== -->
+      <section class="hero__info_wrapper">
+        <!-- ==== HERO-INFO ==== -->
+        <div class="hero__info">
+          <h1 class="hero__heading">
+            Empower your journey  <br />
+             of learning and coding with <span>CIRCUITBOTS</span>
+          </h1>
+          <p class="hero_subtext">
+            Fast, easy and free way to effectively learn coding easily and quiet
+            subtle manner in no time.
+          </p>
         </div>
-     
-      
-        <div class="box3">
-          <h3>What You'll Find Here!</h3>
-          <p>Our website is a treasure trove of resources designed to guide you through every step of your Arduino journey. From in-depth tutorials and interactive lessons to engaging projects and real-world applications, you'll find everything you need to thrive in this exciting field. Our community is here to support you, answer your questions, and celebrate your achievements.</p>
-      </div>
-      
-      <a href="lesson1.html">  
-        <button id='button1' onclick='openfile()'> Go to the lessons !</button></a>
-    
+        <!-- ==== HERO-CTA-BUTTON ==== -->
+        <a href="lessons.html">
+        <button class="hero__cta_btn">
+          <img
+            src="./images/play-circle-rounded.png"
+            alt="play-circle-rounded"
+          />
+          <span>Start learning</span> it's free!
+        </button>
+        </a>
 
+      </section>
+
+      <!-- ==== DIRECTION-ARROW ==== -->
+      <img
+        src="./images/direction-arrow-element.png"
+        alt="direction-arrow-element"
+        class="direction_arrow"
+      />
+
+      <!-- ==== POLYGON-ELEMENT-1 ==== -->
+      <img
+        src="./images/polygon-element-1.png"
+        alt="polygon-element-1"
+        class="polygon_element element--1"
+      />
+
+      <!-- ==== HERO-IMG-WRAPPER ==== -->
+
+      <section class="hero__img_wrapper">
+        <img
+          src="./images/1w8mar3c.png
+          "
+          alt="boy-studying-remotely-with-tutor"
+        />
+        <!-- ==== FADE-BACKGROUND ==== -->
+
+        <div class="fade__bg fade--bg-1"></div>
+        <div class="fade__bg fade--bg-2"></div>
+      </section>
+    </main>
+
+    <!-- ======
+      FEATURED-SECTION
+      ====== -->
+    <section
+      class="featured_section container"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <!-- ==== FEATURED-BRAND-IMAGES ==== -->
+       <div class="featured_brand_img">
+        <img src="https://th.bing.com/th/id/OIP.1VG6jK1xxr9BlKdgGckCeAHaFC?pid=ImgDet&rs=1" alt="brand-1" />
+        <img src="https://th.bing.com/th/id/R.eb9954707a0b7947b90a998e796bc5e5?rik=rJTLbETMPdX4sA&riu=http%3a%2f%2fwww.thelogomix.com%2ffiles%2fu7%2frobot_0.png&ehk=cjnxwSwi8Me%2fWV00tAM0TpjqZKe1F%2f4DDVQQHip%2bqh8%3d&risl=&pid=ImgRaw&r=0" alt="brand-2" />
+        <img src="https://th.bing.com/th/id/R.e9451340459cb92c7d93ffc4eecde83a?rik=MdNiIn%2fWrIY6SQ&pid=ImgRaw&r=0" alt="brand-3" />
+        <img src="https://th.bing.com/th/id/OIP.TX_D3gPKf1-vaJuzpQS1AgHaEK?pid=ImgDet&rs=1" alt="brand-4" />
+      </div>
+    </section>
+
+    <!-- ======
+      FEATURES-SECTION
+      ====== -->
+    <section
+      class="features_section"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <!-- ==== FEATURES-CARDS-CONTAINER ==== -->
+      <div class="features_cards container">
+        <!-- ==== FEATURES-CARD ==== -->
+        <div class="features_card">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/002/560/699/large_2x/little-children-studying-in-classroom-vector.jpg
+            "
+            alt="group-young-people-discussing"
+          />
+          <h4>Kid-Friendly</h4>
+          <p>
+            Unlock a world of coding learning designed for children
+          </p>
+        </div>
+        <!-- ==== FEATURES-CARD ==== -->
+        <div class="features_card">
+          <img src="./images/boy-carrying-books.png" alt="boy-carrying-books" />
+          <h4>Interactive lessons</h4>
+          <p>
+            Dive into dynamic courses for an interactive educational experience.
+          </p>
+        </div>
+
+        <div class="features_card">
+          <img
+            src="./images/open-box-with-coupons.png"
+            alt="open-box-with-coupons"
+          />
+          <h4>Zero-Cost Engaging Learning</h4>
+          <p>
+            Explore interactive courses featuring multimedia, quizzes, and practical exercises – all for free.
+          </p>
+        </div>
+      </div>
+
+      <!-- ==== POLYGON-ELEMENT-2 ==== -->
+      <img
+        src="./images/polygon-element-2.png"
+        alt="polygon-element-2"
+        class="polygon_element element--2"
+      />
+    </section>
+
+    <!--FOOTER-LINE -->
+    <div class="footer_line"></div>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="script.js"></script>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-  </html>
+</html>
