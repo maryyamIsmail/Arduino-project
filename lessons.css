@@ -227,28 +227,6 @@ button {
   opacity: 1;
 }
 
-/* ===== HERO =====
-/* .hero {
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: 100%;
-  justify-items: center;
-  text-align: center;
-  position: relative;
-  row-gap: 5rem;
-  /* ===== HERO-INFO-WRAPPER ===== */
-  /* ===== DIRECTION-ARROW ===== */
-  /* ===== POLYGON-ELEMENT ===== */
- 
-/*.hero .hero__info_wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 2rem;
-}
-.hero .direction_arrow {
-  display: none;
-} */
 
 .polygon_element {
   position: absolute;
@@ -261,13 +239,37 @@ button {
   transform: translate(-10rem, -10rem);
 }
 
+h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "Inter", sans-serif;
+    color: var(--secondary-color);
+    font-size:xx-large;
+    text-align: center;
+  }
+
 .lessons{
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 250px;
     background-color: white;
     border-radius: 10px;
-    width:70%;
+    width:60%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: var(--fw-600);
     
+}
+.title-lesson{
+  font-size: 2rem;
+  color: var(--black-color);
+  font-family: "Inter", sans-serif;
+  margin-left: 20px;
+
+}
+.title-lesson span {
+  color: var(--secondary-color);
+}
+.lessons:hover {
+  transform: scale(1.025);
 }

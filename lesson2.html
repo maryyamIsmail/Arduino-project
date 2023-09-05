@@ -20,6 +20,7 @@
   HEADER
   ====== -->
 <header class="container header">
+  <title>CircuitBots</title>
   <!-- ======  NAVBAR  ====== -->
   <nav class="navbar">
     <!-- ==== LOGO  ==== -->
@@ -58,6 +59,13 @@
         <h4 id="lsn-title">Unveiling Arduino's Magic Parts</h4>
      </div>
 
+     <img
+        src="./images/polygon-element-1.png"
+        alt="polygon-element-1"
+        class="polygon_element element--1"
+      />
+
+
      <div>
         <img id='rbt-img1' src="https://i.pinimg.com/originals/f8/d4/b4/f8d4b444a8e1567dd236ba2ecc848656.jpg" alt="img1">
        <p id="text1"> Alright, brave explorers! <br>Let's peek inside the secret world of Arduino's parts. Imagine Arduino as a friendly robot buddy – it has a brain, arms, power juice, and even a way to chat with computers. These parts team up to create your very own techno-magic.</p> 
@@ -66,6 +74,7 @@
    <p id="linking"> You can check <a href="kit.html">ArduinoKit</a> to know more before starting the lesson!</p>
 
    <div class="container-components" >
+    <div class="compo">
     <div class="image-container">
       <img class="images" src="https://th.bing.com/th/id/R.13add4c88240b24897d7137e52a6f32f?rik=vjvLL2Jm%2f8ADDA&pid=ImgRaw&r=0" alt="led">
     </div>
@@ -74,9 +83,9 @@
       <p class="expln">LEDs are like tiny light bulbs. They light up when you tell them to, adding color to your projects.</p>
    </div>
   </div>
+</div>
 
-
-   <div>
+  <div class="compo">
     <div class="image-container">
       <img class="images" src="https://th.bing.com/th/id/OIP.IWVJLNWVbhzUI-wwfTIxBQHaHa?pid=ImgDet&rs=1" alt="resistor">
     </div>
@@ -85,31 +94,49 @@
    </div>
   </div>
 
+  <div class="compo">
     <div class="image-container">
-      <div><img class="images" src="https://th.bing.com/th/id/R.583dc6b6e0c4a4ce8f398fe0ed4b4017?rik=LLdMBrRjU6v8ag&pid=ImgRaw&r=0" alt="buttons">
+      <img class="images" src="https://th.bing.com/th/id/R.583dc6b6e0c4a4ce8f398fe0ed4b4017?rik=LLdMBrRjU6v8ag&pid=ImgRaw&r=0" alt="resistor">
     </div>
-    <div>
-      <h3 class="title">BUTTONS</h3>
-      <p class="expln"> Buttons are like switches. Press them to make things happen, like turning on a light.</p>
+    <div><h3 class="title">BUTTONS</h3>
+      <p class="expln">Buttons are like switches. Press them to make things happen, like turning on a light.</p>
    </div>
   </div>
+</div>
   
+<section class="D-Dgame">
+  <h2 class="game-text">Let's have some fun with DRAG & DROP game!</h2>
+<section class="draggable-elements">
+  <img src="https://th.bing.com/th/id/R.f620e2502cebc14689ede3b602dedea3?rik=eH3HJZVrkmd0ow&pid=ImgRaw&r=0" class="draggable" style="color: #ff6384;" draggable="true" id="led">
+  <img src="https://th.bing.com/th/id/OIP.U6HmyoZcirILt_-veYTcuAHaD4?pid=ImgDet&rs=1" class="draggable" style="color: #36a2eb;" id="resistor" draggable="true" >
+  <img src="https://i.pinimg.com/originals/9b/85/c3/9b85c3e37a0d5a5d1b19f15517f24818.png" class="draggable" draggable="true" style="color: #ffce56;" id="robot">
+  <img src="https://th.bing.com/th/id/OIP.sOqh5zPO_0Vbew5ufgKEIQHaFa?pid=ImgDet&rs=1" class="draggable" draggable="true" style="color: #9966ff;" id="arduinokit">
+  <img src="https://maker.pro/storage/yRS8t3D/yRS8t3DaIjV9vCGebsP889rECrjZNukidrDRlaDF.jpeg" class="draggable" draggable="true" style="color: #4bc0c0;" id="button">
 
-   <!-- <div class="game-container">
-    <h1>Drag and Drop Arduino Kit Game</h1>
-    <div class="components" id="components">
-      <div class="component" draggable="true">Resistor</div>
-      <div class="component" draggable="true">LED</div>
-      <div class="component" draggable="true">Button</div>
-    </div>
-    <div class="names" id="names">
-      <div class="name" data-component="LED">Light Emitting Diode</div>
-      <div class="name" data-component="Resistor">Resistor</div>
-      <div class="name" data-component="Button">Push Button</div>
-    </div>
-  </div> -->
+  
+</section>
+
+<section class="droppable-elements">
+  <div class="droppable" data-draggable-id="led"><span>LED</span></div>
+  <div class="droppable" data-draggable-id="resistor"><span>Resistor</span></div>
+  <div class="droppable" data-draggable-id="robot"><span>Robot</span></div>
+  <div class="droppable" data-draggable-id="arduinokit"><span>ArduinoKit</span></div>
+  <div class="droppable" data-draggable-id="button"><span>Button</span></div>
+</section>
+
+</section>
+
+<section>
+  <h2 class="game-text">Now let's test our knowledge!</h2>
+  <img class='gif' src="https://th.bing.com/th/id/OIP.D-beloESToCyst4UHDTXKgHaFH?pid=ImgDet&rs=1" alt="quiz-time">
+    <a href="quiz2.html">  
+        <button class="quiz-btn" onclick="openfile()" >Start your Quiz!</button> </a>
+
+   </div>
+</section>
      
-     
+<a href="lesson3.html">  
+  <button  id='nxt-btn' onclick="openfile()">Next Lesson</button> </a>
 
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

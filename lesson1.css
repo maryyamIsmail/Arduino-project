@@ -229,16 +229,18 @@ button {
 
   /* title */
 #lsn-nb{
-    margin-top: 5px;
-    margin-left: 25px;
-    font-size: 35px;
-    font-family: 'Pacifico', cursive;
-    font-style: italic;
-    color: #8270b4 ;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: var(--fw-600);
+  color: var(--fade_bg_1);
+  letter-spacing: 1px;
+    margin-top: 10px;
+    margin-left: 35px;
 }
 #lsn-title{
 text-align: center;
-font-size: 70px;
+font-size: 4.5rem; 
+color: var(--black-color);
 }
 
 #rbt-img1{
@@ -247,20 +249,35 @@ font-size: 70px;
 }
 
 #text1{
-    width:50%;
-    margin-top: 20px;
-   font-size: 20px;
-   float:right;
-   border-radius: 50px 15px;
+
+   font-size: 2.5rem; 
+  color: var(--black-color);
+  width: 50%;
+  margin-top: 20px;
+  font-family: "Inter", sans-serif; 
+  word-spacing: 2px;
+  float: right;
+  margin-right: 200px;
+    border-radius: 50px 15px;
    background-color:rgb(147, 197, 231) ;
-   margin-right:200px;
-   font-family: sans-serif;
 }
+
 
 
 .images{
    height: 400px;
   margin: 50px;
+}
+
+.polygon_element {
+  position: absolute;
+  z-index: -1;
+  max-width: 60%;
+  /* ===== POLYGON-ELEMENT-1 ===== */
+}
+.polygon_element.element--1 {
+  left: 0;
+  transform: translate(-10rem, -10rem);
 }
 
 #btn-text{
@@ -279,7 +296,7 @@ font-size: 70px;
 
 #btn1{
     position: absolute;
-    top:640px;
+    top:650px;
     margin-top: 100px;
     left:800px;
     border: none;
@@ -290,19 +307,32 @@ display: inline-block;
 font-size: 22px;
 border-radius: 40px;
 font-family: sans-serif;
+background-color: hsla(0, 0%, 100%, 0.829);
+color: var(--neutral-color);
+box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.2);
+}#btn1:hover{
+  transform: scale(1.025);
 }
 
-#btn2{
-    border: none;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
+#nxt-btn{
+
+background-color: hsla(0, 0%, 100%, 0.829);
+align-items: center;
+justify-content: center;
+column-gap: 1rem;
+padding: 0.88rem 1rem;
+width: fit-content;
+font-weight: var(--fw-500);
+text-transform: capitalize;
+border-radius: 2.2rem;
+box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.2);
+transition: transform 0.4s ease;
+color: var(--neutral-color);
 display: inline-block;
-font-size: 22px;
-border-radius: 40px;
-background-color:rgb(147, 197, 231) ;
-color: white;
 margin-left: 600px;
 margin-bottom: 50px;
-font-family: sans-serif;
+font-size: x-large;
+}
+#nxt-btn:hover{
+  transform: scale(1.025);
 }
