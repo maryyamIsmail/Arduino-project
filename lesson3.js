@@ -1,133 +1,29 @@
-const page=document.getElementById("button1");
-function openfile(){
-  page.className='open_file'
+const images = [
+   'https://th.bing.com/th/id/OIP.pnCNFtiDjEqGfVDHyFmMVwHaGm?pid=ImgDet&rs=1',
+   'https://th.bing.com/th/id/OIP.pnCNFtiDjEqGfVDHyFmMVwHaGm?pid=ImgDet&rs=1',
+   'https://th.bing.com/th/id/OIP.r4E8Ikls458WzErV-LR9QgHaHa?pid=ImgDet&rs=1',
+   'https://th.bing.com/th/id/OIP.r4E8Ikls458WzErV-LR9QgHaHa?pid=ImgDet&rs=1',
+   'https://th.bing.com/th/id/R.81a025085e34a10d08a05b2f754195f5?rik=77EZAIkJw62zcA&pid=ImgRaw&r=0',
+   'https://th.bing.com/th/id/R.81a025085e34a10d08a05b2f754195f5?rik=77EZAIkJw62zcA&pid=ImgRaw&r=0',
+   'https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/25046/clueless-robot-remix-clipart-md.png',
+   'https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/25046/clueless-robot-remix-clipart-md.png',
+   'https://th.bing.com/th/id/OIP.bDqYi1td1DBATxf9FBc-pgHaHa?pid=ImgDet&rs=1',
+   'https://th.bing.com/th/id/OIP.bDqYi1td1DBATxf9FBc-pgHaHa?pid=ImgDet&rs=1',
+   'https://th.bing.com/th/id/OIP.28mcKqazTS5YcWCC6ZRMkAHaFb?pid=ImgDet&rs=1',
+   'https://th.bing.com/th/id/OIP.28mcKqazTS5YcWCC6ZRMkAHaFb?pid=ImgDet&rs=1',
+   'https://i1.pnghost.com/11/3/22/pngdb-blue-hand-painted-robot-cartoon-illustration-png-2wknpfUgnkEiUb0k1XekftJPP.jpg',
+   'https://i1.pnghost.com/11/3/22/pngdb-blue-hand-painted-robot-cartoon-illustration-png-2wknpfUgnkEiUb0k1XekftJPP.jpg',
+   'https://th.bing.com/th/id/OIP.0V1atgGEpwQA9pSqZ39-jQHaHa?pid=ImgDet&rs=1',
+   'https://th.bing.com/th/id/OIP.0V1atgGEpwQA9pSqZ39-jQHaHa?pid=ImgDet&rs=1',
+   'https://cdn4.iconfinder.com/data/icons/robotics-3/48/69-512.png',
+   'https://cdn4.iconfinder.com/data/icons/robotics-3/48/69-512.png'
+]
+var shuf_images = images.sort(()=> (Math.random()> .5)? 2: -1);
+for ( var i=0; i<images.lenght; i++){
+    let box= document.createElement('div')
+    box.className='item';
+    box.innerHTML=shuf.images[i]
+    document.querySelector('.game').appendChild(box);
+
+
 }
-
-const questionElement = document.querySelector('.question');
-const optionsContainer = document.querySelector('.options');
-const nextButton = document.getElementById('next-btn');
-
-
-const quizData = [
-  {
-    question: "What can a servo motor do",
-    options: [" Move things like a robot","Write the code","Dance like a star","Generate soothing melodies"],
-    correctAnswer: 0
-  },
-  {
-    question: "How do ultrasonic sensors measure distance?",
-    options: [
-      " By analyzing brain waves",
-      "By emitting laser beams",
-      "By utilizing gravitational waves",
-      "By sending sound waves and analyzing echoes"
-    ],
-    correctAnswer: 3
-  },
-  {
-    question: "What's a potentiometer's job?",
-    options: [
-      " Forecasting the future",
-      "Generating unlimited energy",
-      "Adjusting various parameters",
-      "Translating animal languages"
-    ],
-    correctAnswer: 2
-  },
-  {
-    question: "Imagine servo motors as",
-    options: [
-     " Ethereal beings",
-     " Robot allies",
-     "A car",
-     "Mysterious puzzles"
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "Why are ultrasonic sensors like electronic eyes?",
-    options: [
-      " They can predict lottery numbers",
-      " They measure distances like eyesight",
-      " They have night vision capabilities",
-      "They look like the eyes"
-    ],
-    correctAnswer: 1
-  }
-];
-
-let currentQuestionIndex = 0;
-let userAnswers = [];
-
-function loadQuestion() {
-  const currentQuestion = quizData[currentQuestionIndex];
-  questionElement.textContent = currentQuestion.question;
-
-  optionsContainer.innerHTML = "";
-  currentQuestion.options.forEach((option, index) => {
-    const optionElement = document.createElement('button');
-    optionElement.textContent = option;
-    optionElement.addEventListener('click', () => selectAnswer(index));
-    optionsContainer.appendChild(optionElement);
-  });
-}
-
-function selectAnswer(selectedIndex) {
-    userAnswers.push(selectedIndex);
-    optionsContainer.innerHTML = '';
-  
-    const currentQuestion = quizData[currentQuestionIndex];
-    const correctAnswerIndex = currentQuestion.correctAnswer;
-  
-    if (selectedIndex === correctAnswerIndex) {
-      optionsContainer.innerHTML = "Correct!";
-      optionsContainer.classList.add('correct');
-    } else {
-      optionsContainer.innerHTML = "Wrong! Try again.";
-      optionsContainer.classList.add('incorrect');
-      currentQuestionIndex--; 
-    }
-  
-    nextButton.disabled = false;
-  }
-
-  nextButton.addEventListener('click', () => {
-    currentQuestionIndex++;
-    
-    if (currentQuestionIndex < quizData.length) {
-      loadQuestion();
-    } else {
-      showSummary();
-    }
-  });
-
-const backBtn = document.getElementById('back-btn');
-
-function showSummary() {
-    questionElement.textContent = "Quiz Completed!";
-    optionsContainer.innerHTML = `
-      <p>Your Score: ${calculateScore()} out of ${quizData.length}</p>
-    `;
-  
-    backBtn.style.display = 'block'; 
-    nextButton.style.display = 'none'; 
-}
-backBtn.addEventListener('click', () => {
-    window.location.href = 'lesson3.html';
-  });
-
-function calculateScore() {
-  let score = 0;
-  for (let i = 0; i < quizData.length; i++) {
-    if (userAnswers[i] === quizData[i].correctAnswer) {
-      score++;
-    }
-  }
-  return score;
-}
-
-loadQuestion();
-
-
-// cardGame
-

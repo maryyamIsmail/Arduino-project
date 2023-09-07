@@ -22,6 +22,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   </head>
   <body>
     <!-- ======
@@ -70,28 +71,33 @@
         class="polygon_element element--1"
       />
   
-     <h2>Click on the lesson to START!</h2>
-      <main class="hero-container">
-         <!-- lessons -->
-      <div class="lessons">
-        <a class="title-lesson" href="lesson1.html"> <b>LESSON <span>1</span> : </b> What is Arduino?</a> 
-    </div>
-    <div class="lessons">
-      <a class="title-lesson" href="lesson2.html"> <b>LESSON <span>2</span> : </b> Unveiling Arduino's Magic Parts</a> 
-    </div>
-    <div class="lessons">
-      <a class="title-lesson" href="lesson3.html"> <b>LESSON <span>3</span> : </b>Discovering Arduino's Tricks </a> 
-    </div>
-    <div class="lessons">
-      <a class="title-lesson" href="lesson4.html"> <b>LESSON <span>4</span> : </b>Talking Arduino's Language </a> 
-    </div>
-    <div class="lessons">
-      <a class="title-lesson" href="lesson5.html"> <b>LESSON <span>5</span> : </b>Light Up Your World with Arduino</a> 
-    </div>
-
+      <h2 data-aos="fade-up">Click on the lesson to START!</h2>
+    <main class="hero-container">
+      <div class="lessons" data-aos="fade-up">
+        <a class="title-lesson" href="lesson1.html"><b>LESSON <span>1</span> :</b> What is Arduino?</a>
+      </div>
+      <div class="lessons" data-aos="fade-up">
+        <a class="title-lesson" href="lesson2.html"><b>LESSON <span>2</span> :</b> Unveiling Arduino's Magic Parts</a>
+      </div>
+      <div class="lessons" data-aos="fade-up">
+        <a class="title-lesson" href="lesson3.html"><b>LESSON <span>3</span> :</b> Discovering Arduino's Tricks</a>
+      </div>
+      <div class="lessons" data-aos="fade-up">
+        <a class="title-lesson" href="lesson4.html"><b>LESSON <span>4</span> :</b> Talking Arduino's Language</a>
+      </div>
+      <div class="lessons" data-aos="fade-up">
+        <a class="title-lesson" href="lesson5.html"><b>LESSON <span>5</span> :</b> Light Up Your World with Arduino</a>
+      </div>
     </main>
 
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="lessons.js"></script>
+  <script>
+    // Initialize AOS with desired configuration
+    AOS.init({
+      duration: 1000, 
+    });
+  </script>
   </html>

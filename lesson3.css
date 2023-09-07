@@ -393,10 +393,14 @@ button {
   cursor:pointer;
   font-weight: 600;
 }
+.reset:focus{
+  color:#fff;
+  background:rgb(74, 93, 199);
+}
 
 .game{
-  width: 440px;
-  height: 440px;
+  width: 400px;
+  height:400px;
   display: flex;
   flex-wrap:wrap;
   gap:10px;
