@@ -271,3 +271,21 @@ button {
    margin-right:200px;
    font-family: sans-serif;
 }
+
+#pre-exp{
+  margin-top: 75px;
+  text-align: center;
+  font-size: 28px;
+  color: var(--secondary-color);
+}
+
+.code-title{
+  font-size: 20px;
+  margin:40px;
+}
+
+.code-img{
+  width:40%;
+  height:60%;
+  margin-left: 50px;
+}
