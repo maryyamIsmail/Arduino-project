@@ -56,9 +56,10 @@
 </header>
 
 <ul class="sidebar">
-  <li><a href="">Explannation</a></li>
-  <li><a href="#">Support</a></li>
-  <li><a href="#">About</a></li>
+  <li class="sidebar-brand"><a href=""><b>Summary</b></a></li>
+  <li><a href="#section1">Explannation</a></li>
+  <li><a href="#section2">Game</a></li>
+  <li><a href="#section2">Quiz</a></li>
   </ul>
 
       <div><h3 id="lsn-nb">Lesson 1 : </h3>
@@ -71,20 +72,24 @@
         class="polygon_element element--1"
       />
 
-     <div>
+     <div id="section1">
      <img id='rbt-img1' src="https://th.bing.com/th/id/OIP.F_aOQBs2uLhzRlV5QKQJcAHaHa?pid=ImgDet&rs=1" alt="img1">
     <p id="text1">  Hey there, <span>future coders</span>!<br> Welcome to the Arduino adventure. Imagine if you had a magical box that could make your ideas come alive. That's Arduino!<br> Get ready to say <b>"Hello, Arduino World!"</b></p> 
-</div>
+     </div>
+
+      </div>
+
 
 <img class="images" src="https://image.freepik.com/free-vector/arduino-board-isometric-designed_255805-15.jpg" alt="img">
     <div>
 
 
-
+<div id="section2">
     <p id="btn-text">Discover how much you know with these engaging questions!</p>
     <a href="quiz1.html">  
         <button id='btn1' onclick="openfile()">Start your Quiz!</button> </a>
    </div>
+  </div>
 
    <a href="lesson2.html">  
     <button id='nxt-btn' onclick="openfile()">Next Lesson</button> </a>

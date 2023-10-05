@@ -247,7 +247,7 @@ button {
     color: var(--fade_bg_1);
     letter-spacing: 1px;
       margin-top: 10px;
-      margin-left: 35px;
+      margin-left: 155px;
   }
   #lsn-title{
   text-align: center;
@@ -270,4 +270,47 @@ button {
    background-color:rgb(147, 197, 231) ;
    margin-right:200px;
    font-family: sans-serif;
+}
+
+
+.sidebar {
+  list-style-type:none;
+  width:140px;
+  height:100%;
+  left:0;
+  top:65;
+  text-align:left;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition:1s ease;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.sidebar a {
+  text-decoration:none;
+  color:black;
+  transition:1s ease;
+  font-size: 17px;
+}
+
+.sidebar li {
+  text-indent: 20px;
+  line-height: 40px;
+  transition:0.5s ease;
+  margin-top: 20px;
+}
+
+.sidebar li:hover {
+  background-color:#777;
+  cursor:pointer;
+  text-indent: 30px;
+}
+
+.sidebar > .sidebar-brand {
+height: 65px;
+font-size: 18px;
+line-height: 60px;
 }

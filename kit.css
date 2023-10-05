@@ -243,7 +243,7 @@ button {
      
 }
   #text1{
-    width:60%;
+    /* width:60%;
     text-align: center;
     display: center;
     margin-top: 30px;
@@ -251,7 +251,14 @@ button {
    font-size: 25px;
    border-radius: 50px 15px;
    
-   font-family: sans-serif;
+   font-family: sans-serif; */
+   margin-top: 30px;
+   margin-left:200px;
+   text-transform: uppercase;
+   font-size: var(--logo-font-size);
+   font-weight: var(--fw-600);
+   color: var(--black-color);
+   letter-spacing: 1px;
 }
 
 .kit-container{
@@ -300,4 +307,20 @@ button {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
 }
