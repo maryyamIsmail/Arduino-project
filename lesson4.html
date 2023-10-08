@@ -49,6 +49,8 @@
            
           </a>
         </li>
+
+          
     <!-- ==== NAV-TOGGLE-BUTTON ==== -->
     <button class="nav_toggle_btn">
       <i class="ri-menu-fill ri-xl"></i>
@@ -56,6 +58,13 @@
   </nav>
 </header>
 
+
+<ul class="sidebar">
+  <li class="sidebar-brand"><a href=""><b>Summary</b></a></li>
+  <li><a href="#section1">Explannation</a></li>
+  <li><a href="#section2">Quiz</a></li>
+  <li><a href="#section2">Game</a></li>
+  </ul>
 
       <div><h3 id="lsn-nb">Lesson 4 : </h3>
         <h4 id="lsn-title"> Talking Arduino's Language</h4>
@@ -66,7 +75,7 @@
        <p id="text1">Welcome to the world of movement, creators! <br> Let's chat with Arduino using its secret language: code! Code is like a recipe that tells Arduino what to do. With code, you can make LEDs blink, motors move, and buttons respond.</p> 
    </div>
 
-   <section class="explannation">
+   <section class="explannation" id="section1">
    <h2 id="pre-exp"> Alright, let's put on our wizard hats and make Arduino coding a magical adventure!</h2>
 
    <div> 
@@ -110,7 +119,16 @@
    </div>
 
   </section>
-     
+
+  <img id="gif" src=' https://images.lingscars.com/images/play.gif' alt="gif"> 
+</div>
+ 
+  <div id="section2">
+    <div class="quiz-container">
+    <h2 id="quiz-exprsn">Now let's test our knowledge!</h2>
+    <a href="quiz4.html">  
+      <button id='quiz-btn' onclick="openfile()">Start your Quiz!</button> </a>
+  </div>
 
 
   </body>
