@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
 :root {
   /* ====== HEADER-HEIGHT ====== */
   --header-height: 7rem;
@@ -230,7 +231,7 @@ button {
 
 .polygon_element.element--1 {
   left: 0;
-  transform: translate(-10rem, -10rem);
+  /* transform: translate(-10rem, -10rem); */
 }
 
 #image{
@@ -247,11 +248,13 @@ button {
     text-align: center;
     display: center;
     margin-top: 30px;
-    margin-left:250px;
+    margin-right: auto;
+    margin-left:auto;
    font-size: 25px;
    border-radius: 50px 15px;
    
    font-family: sans-serif; */
+<<<<<<< Updated upstream
    margin-top: 30px;
    margin-left:200px;
    text-transform: uppercase;
@@ -259,6 +262,16 @@ button {
    font-weight: var(--fw-600);
    color: var(--black-color);
    letter-spacing: 1px;
+=======
+
+   margin-top: 50px;
+   margin-bottom: 50px;
+   font-family: "Inter", sans-serif;
+   color: var(--secondary-color);
+   font-size: xx-large;
+   text-align: center;
+   font-weight: bold;
+>>>>>>> Stashed changes
 }
 
 .kit-container{

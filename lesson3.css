@@ -109,7 +109,7 @@ button {
 
 /* ===== CONTAINER ===== */
 .container {
-  max-width: 120em;
+  max-width: 130em;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -235,7 +235,7 @@ button {
 }
 .polygon_element.element--1 {
   left: 0;
-  transform: translate(-10rem, -10rem);
+  /* transform: translate(-10rem, -10rem); */
 }
 
 

@@ -277,7 +277,7 @@ color: var(--black-color);
 }
 .polygon_element.element--1 {
   left: 0;
-  transform: translate(-10rem, -10rem);
+  /* transform: translate(-10rem, -10rem); */
 }
 
 #btn-text{
