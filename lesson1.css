@@ -416,6 +416,7 @@ line-height: 60px;
 color:var(--secondary-color);
 }
 
-#section1{
+#section1,
+#section3{
   margin-left: 80px;
 }

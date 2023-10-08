@@ -246,20 +246,40 @@ button {
   }
 
   
-.text-vd{
-    font-size: 20px;
-    margin: 20px;
-    margin-left: 40px;
-    font-family: sans-serif;
-    
+h2{
+  margin-top: 30px;
+  margin-left:200px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: var(--fw-600);
+  color: var(--black-color);
+  letter-spacing: 1px;
 }
-.text-vd span {
-    color: var( --secondary-color);
-    font-weight: bold;
-    font-size: 23px;
-  }
 
-  .yb-vd{
-    margin-left: 300px;
-    margin-top: 30px;
-  }
+.text{
+  background-color: var(--secondary-color);
+  width:50%;
+  margin-top: 40px;
+ font-size: 25px;
+ float:right;
+ border-radius: 50px 15px;
+ margin-right:70px;
+ font-family: sans-serif;
+}
+
+#pic1{
+  width: 30%;
+  height: 50%;
+  margin: 30px;
+  margin-left: 100px;
+}
+
+#text2{
+  margin-top: 40px;
+ font-size: 20px;
+ margin:50px;
+ margin-left: 100px;
+ margin-right: 150px;
+ font-family: sans-serif;
+
+}

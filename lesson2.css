@@ -474,7 +474,7 @@ font-size: 60px;
   transition: transform 0.4s ease;
   color: var(--neutral-color);
   display: center;
-  margin-left: 600px;
+  margin-left: 550px;
   font-size: x-large;
   margin-top: 50px;
   }
@@ -490,7 +490,7 @@ font-size: 60px;
  
 .quiz-btn{
   position: absolute;
-    top:2550px;
+    top:1750px;
     margin-top: 100px;
     left:550px;
     border: none;
@@ -552,5 +552,5 @@ color:var(--secondary-color);
 }
 
 #section1{
-  margin-left: 80px;
+  margin-left: 90px;
 }
