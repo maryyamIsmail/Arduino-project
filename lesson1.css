@@ -236,31 +236,36 @@ button {
   color: var(--secondary-color);
   letter-spacing: 1px;
     margin-top: 10px;
-    margin-left: 170px;
+    margin-left: 370px;
+    position: absolute;
+    top: 100px;
+  
 }
-#lsn-title{
-text-align: center;
-font-size: 4.5rem; 
+ #lsn-title{
+font-size: 3.5rem; 
 color: var(--black-color);
-}
+margin-left: 370px;
+position: absolute;
+top: 160px;
+} 
 
 #rbt-img1{
+  margin-top: 50px;
     height:250px;
     margin-left: 120px;
+    position: relative;
 }
 
 #text1{
 
-   font-size: 2.5rem; 
+   font-size: 2rem; 
   color: var(--black-color);
   width: 50%;
-  margin-top: 20px;
   font-family: "Inter", sans-serif; 
   word-spacing: 2px;
-  float: right;
-  margin-right: 200px;
-    border-radius: 50px 15px;
-   background-color:rgb(147, 197, 231) ;
+  margin-left: 370px;
+  position: absolute;
+top: 230px;
 }
 
 
@@ -406,6 +411,9 @@ padding: 20px;
   line-height: 40px;
   transition:0.5s ease;
   margin-top: 20px;
+  font-size: var(--nav_links_font-size);
+  font-weight: var(--fw-400);
+  color: var(--neutral-color);
 }
 
 .sidebar li:hover {
