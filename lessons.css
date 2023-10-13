@@ -109,7 +109,7 @@ button {
 
 /* ===== CONTAINER ===== */
 .container {
-  max-width: 130em;
+  max-width: 120em;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -236,9 +236,8 @@ button {
 }
 .polygon_element.element--1 {
   left: 0;
-  /* transform: translate(-10rem, -10rem); */
+  transform: translate(-10rem, -10rem);
 }
-
 
 h2{
     margin-top: 50px;
@@ -251,11 +250,10 @@ h2{
 
 .lessons{
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 250px;
     background-color: white;
     border-radius: 10px;
-    width:130em;
+    width:60%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     font-family: "Inter", sans-serif;
@@ -276,7 +274,6 @@ h2{
   transform: scale(1.025);
 }
 
-/* FOOTER-LINE */
 .footer_line {
   background-color: var(--secondary-color);
   width: 100%;
