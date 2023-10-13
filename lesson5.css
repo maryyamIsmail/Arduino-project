@@ -389,3 +389,42 @@ color:rgb(116, 172, 210);
 #section2{
   margin-top: 100px;
 }
+
+#feedback-box{
+  display: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#title-feedback{
+  margin-bottom: 50px;
+  font-size: 25px;
+
+}
+#feedback-text{
+  height: 150px;
+  width: 500px;
+  text-align: center;
+}
+#submit-button{
+  position: absolute;
+  top:2350px;
+  font-size:20px;
+  left: 600px;
+  background-color: hsla(0, 0%, 100%, 0.829);
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: 0.88rem 1rem;
+  width: fit-content;
+  font-weight: var(--fw-500);
+  text-transform: capitalize;
+  border-radius: 2.2rem;
+  box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+  color: var(--neutral-color);
+  display: center;
+}
+#submit-button:hover{
+  transform: scale(1.025);
+}

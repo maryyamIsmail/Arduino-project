@@ -315,6 +315,7 @@ button {
   box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease;
   color: var(--neutral-color);
+  
 }
 
 /* HERO-CTA-BTN span */
