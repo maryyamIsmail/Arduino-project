@@ -253,6 +253,10 @@ button {
   list-style: none;
   transition:1s ease;
   margin-top: 50px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin-left: 30px;
 
 }
 
@@ -291,7 +295,7 @@ color:var(--secondary-color);
     color: var(--secondary-color);
     letter-spacing: 1px;
       margin-top: 10px;
-      margin-left: 155px;
+      margin-left: 170px;
   }
   #lsn-title{
   text-align: center;
@@ -302,7 +306,7 @@ color:var(--secondary-color);
 
 #rbt-img1{
     height:250px;
-    margin-left: 120px;
+    margin-left: 150px;
 }
 
 #text1{

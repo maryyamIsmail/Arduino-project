@@ -246,11 +246,13 @@ button {
   color: var(--secondary-color);
   letter-spacing: 1px;
     margin-top: 10px;
-    margin-left: 155px;
+    margin-left: 165px;
+  
 }
 #lsn-title{
 text-align: center;
-font-size: 4.5rem; 
+font-size: 3 rem; 
+margin-left: 180px;
 color: var(--black-color);
 }
 
@@ -521,7 +523,10 @@ box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.2);
   list-style: none;
   transition:1s ease;
   margin-top: 50px;
-
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin-left: 30px;
 }
 
 .sidebar a {
@@ -552,5 +557,5 @@ color:var(--secondary-color);
 }
 
 #section1{
-  margin-left: 90px;
+  margin-left: 70px;
 }
