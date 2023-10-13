@@ -116,7 +116,7 @@ button {
 
 /* CONTAINER */
 .container {
-  max-width: 120em;
+  max-width: 130em;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -264,16 +264,17 @@ button {
 }
 
 /* HERO .polygon_element */
-.hero .polygon_element {
+.polygon_element {
   position: absolute;
   z-index: -1;
   max-width: 60%;
 }
 
 /* HERO .polygon_element.element--1 */
-.hero .polygon_element.element--1 {
+.polygon_element.element--1 {
   left: 0;
-  transform: translate(-10rem, -10rem);
+  position:absolute;
+  /* transform: translate(-10rem, -10rem); */
 }
 
 /* HERO-INFO */

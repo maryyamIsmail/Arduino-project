@@ -109,7 +109,7 @@ button {
 
 /* ===== CONTAINER ===== */
 .container {
-  max-width: 120em;
+  max-width: 130em;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -236,8 +236,9 @@ button {
 }
 .polygon_element.element--1 {
   left: 0;
-  transform: translate(-10rem, -10rem);
+  /* transform: translate(-10rem, -10rem); */
 }
+
 
 h2{
     margin-top: 50px;
@@ -250,10 +251,11 @@ h2{
 
 .lessons{
     margin-top: 50px;
-    margin-left: 250px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     border-radius: 10px;
-    width:60%;
+    width:130em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     font-family: "Inter", sans-serif;
