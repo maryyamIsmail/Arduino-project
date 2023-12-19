@@ -277,10 +277,10 @@ h2{
 .footer_line {
   background-color: var(--secondary-color);
   width: 100%;
-  height: 3.8rem;
   align-items: center;
   font-size: 15px;
   text-align: center;
 font-weight: bold;
 margin-top: 30px;
+padding: 30px;
 }
