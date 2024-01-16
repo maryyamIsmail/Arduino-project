@@ -9,12 +9,12 @@ const resultText = document.getElementById("result-text");
 
 //Options values for buttons
 let options = {
-  tools: [
+  Tools: [
     "led",
     "potentiometer",
     'button','sensor','resistor','breadbord','servomotor'
   ],
-  Randoms: ['robot','arduino','technology','coding','robotics'],
+  Technology: ['robot','arduino','technology','coding','robotics'],
   
 };
 

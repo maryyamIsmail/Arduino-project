@@ -316,8 +316,7 @@ button {
   transition: transform 0.4s ease;
   color: var(--neutral-color);
   
-}
-
+}  
 /* HERO-CTA-BTN span */
 .hero__cta_btn span {
   font-weight: var(--fw-600);
@@ -326,7 +325,7 @@ button {
 
 /* HERO-CTA-BTN:hover */
 .hero__cta_btn:hover {
-  transform: scale(1.025);
+  transform: scale(1.9);
 }
 
 /* HERO-IMAGE-WRAPPER */

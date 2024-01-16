@@ -48,7 +48,7 @@ const generatePDF = async (name) => {
     y: 200,
     size: 58,
     font: SanChezFont,
-    color: black,
+    color: rgb(0, 0, 0),
   });
 
   // Serialize the PDFDocument to bytes (a Uint8Array)
